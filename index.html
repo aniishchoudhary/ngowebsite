@@ -42,6 +42,21 @@
         background-color: black; 
       }
     </style>
+    <style>
+    /* Ensure carousel images take full width on mobile */
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Adjust columns on mobile devices */
+    @media (max-width: 768px) {
+      .carousel-item .row .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
   </head>
 
   <body>
